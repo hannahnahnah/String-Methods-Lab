@@ -33,7 +33,7 @@ public class stringAndMethodsLab {
 		String mathPhrase = scnr.nextLine();
 		afterMath(mathPhrase);
 		
-		System.out.println("Enter a word: ");
+		System.out.println("Enter a word to letterize: ");
 		String userInput = scnr.nextLine();
 		letterize(userInput);
 		
@@ -53,6 +53,8 @@ public class stringAndMethodsLab {
 	}
 	
 	public static String firstThingsFirst(String a, String b) {
+		a = a.toLowerCase();
+		b = b.toLowerCase();
 		if ((a.charAt(0)) < (b.charAt(0))) {
 			return (a + " " + b);
 		} else {
